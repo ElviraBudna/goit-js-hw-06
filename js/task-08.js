@@ -10,8 +10,6 @@ function onFormSubmit(event) {
     const password = formElements.password.value;
     const formData = {email, password}
 
-    email === "" || password === "" ? alert('Всі поля повинні бути заповнені!') : console.log(formData);
-    
-    event.currentTarget.reset();
+    email === "" || password === "" ? alert('Всі поля повинні бути заповнені!') : (event.currentTarget.reset(), console.log(formData));
 }
 
